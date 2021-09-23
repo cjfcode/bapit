@@ -1,6 +1,6 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  *                                                                   *
- * Bap-it                                                             *
+ * Bap-it                                                            *
  * Version: Beta                                                     *
  * Author: cjfcode and SentientTowel                                 *
  * Date: 06/26/18                                                    *
@@ -12,11 +12,13 @@ package com.example.bopit;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
 import android.widget.ImageView;
+import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class main extends AppCompatActivity {
     @Override
@@ -26,9 +28,15 @@ public class main extends AppCompatActivity {
 
         ConstraintLayout code_mainLayout = findViewById (R.id.v_main_layout);
         ImageView code_mainTitle = findViewById (R.id.v_main_title);
-        Button code_mainStartBtn = findViewById(R.id.v_main_btn_start);
+        TextView code_mainStartBtn = findViewById(R.id.v_main_btn_start);
 
-        /* code within the function below is used to control the actions of the start button */
+        // animation for the text
+        final Animation textAnimation = new AlphaAnimation(0.0f, 1.0f);
+        textAnimation.setRepeatCount(Animation.INFINITE);
+        textAnimation.setRepeatMode(Animation.REVERSE);
+        textAnimation.setDuration(1000);
+        code_mainStartBtn.startAnimation(textAnimation);
+
         code_mainStartBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

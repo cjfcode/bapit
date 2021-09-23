@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Bap It</string>
     <string name="start">Start</string>
+    <string name="startGame">Bap it to begin</string>
     <string name="gameIntent">You made it to game activity!</string>
 </resources>
