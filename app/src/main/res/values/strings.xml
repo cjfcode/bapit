@@ -3,4 +3,8 @@
     <string name="start">Start</string>
     <string name="startGame">Bap it to begin</string>
     <string name="gameIntent">You made it to game activity!</string>
+    <string name="agreement">Mobile devices are sensitive pieces of equipment.
+        Take care not to use excessive force during gameplay.\n\nThe developers of Bapp It for
+        Android accept no responsibility for damages to your device as a result of playing
+        this game.</string>
 </resources>
