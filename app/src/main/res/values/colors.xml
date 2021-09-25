@@ -7,4 +7,5 @@
     <color name="mainText">#D5D5D5</color>
     <color name="introText">#D5D5D5</color>
     <color name="introBG">#000000</color>
+    <color name="splashBG">#000000</color>
 </resources>

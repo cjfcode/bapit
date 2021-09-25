@@ -70,6 +70,7 @@ public class agreement extends AppCompatActivity {
                 // delay starting the new activity until 2 seconds after the text fades out
                 new Handler().postDelayed(() -> {
                     Intent splashScreen = new Intent(agreement.this, splash.class);
+                    splashScreen.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                     startActivity(splashScreen);
                 }, 2000);
             }
